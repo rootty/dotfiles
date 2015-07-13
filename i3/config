@@ -171,4 +171,10 @@ exec --no-startup-id "pulseaudio --start"
 exec --no-startup-id "setxkbmap -model pc105 -layout pl,ua -option grp:alt_shift_toggle"
 
 # Set up dual monitors
-exec --no-startup-id "xrandr --output eDP1 --auto --left-of HDMI1"
+exec --no-startup-id "xrandr --output eDP1 --auto --left-of HDMI1 --primary"
+
+# Dropbox
+exec --no-startup-id "dropbox start"
+
+# Wallpaper
+exec --no-startup-id "feh --bg-scale /home/ainv/Dropbox/backup/Wallpapers/elephant.jpg"
