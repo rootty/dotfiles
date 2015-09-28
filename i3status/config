@@ -20,8 +20,9 @@ order += "run_watch DHCP"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery 0"
-#order += "load"
+order += "load"
 order += "tztime local"
+order += "volume master"
 
 wireless _first_ {
         format_up = "W: (%quality at %essid) %ip"
@@ -65,6 +66,13 @@ cpu_temperature 1 {
 
 cpu_temperature 2 {
         format = "T CPU2: %degrees °C"
-        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp2_input"
+        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp2_input"
 }
 
+volume master {
+        format = "♪: %volume"
+        format_muted = "♪: muted (%volume)"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
