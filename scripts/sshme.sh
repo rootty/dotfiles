@@ -1,3 +1,2 @@
-ssh-add ~/.ssh/g*.pem
-ssh-add ~/Documents/SSH/CD/cd
-
+#!/bin/sh
+keychain golovatyuk.pem
