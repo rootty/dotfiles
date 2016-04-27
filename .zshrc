@@ -112,3 +112,6 @@ alias work_stop="sudo truecrypt -t -d ~/Work/CD"
 #    #if not inside a tmux session, and if no session is started, start a new session
 #    test -z "$TMUX" && (tmux attach || tmux new-session)
 #fi
+
+export NVM_DIR="/home/ainv/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
