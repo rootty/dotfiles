@@ -225,5 +225,5 @@ exec --no-startup-id "feh --bg-scale /home/ainv/Dropbox/backup/Wallpapers/elepha
 # Redshift
 exec --no-startup-id "redshift"
 
-exec --no-startup-id "telegram"
+exec --no-startup-id "telegram-desktop"
 exec --no-startup-id "spotify"
