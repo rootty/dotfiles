@@ -128,6 +128,7 @@ assign [class="Telegram"] $workspace1
 assign [class="Spotify"] $workspace1
 assign [class="jetbrains-idea"] $workspace3
 assign [class="chromium"] $workspace2
+assign [class="Google-chrome"] $workspace2
 assign [class="Skype"] $workspace10
 
 for_window [class="KeePass2"] floating enable
@@ -191,6 +192,7 @@ new_float pixel 1
 
 #gaps settings
 smart_gaps on
+smart_borders no_gaps
 gaps inner 8
 gaps outer 3
 
