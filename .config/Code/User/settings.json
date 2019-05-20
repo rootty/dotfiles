@@ -22,6 +22,7 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.closeEmptyGroups": true,
     "workbench.settings.editor": "json",
+    "workbench.iconTheme": "vscode-icons",
     "explorer.openEditors.visible": 0,
     "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
     "window.zoomLevel": 1,
