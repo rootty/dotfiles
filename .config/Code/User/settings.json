@@ -62,4 +62,6 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "python.jediEnabled": false,
+    "sync.gist": "8bf2b8d37492647e8151c1549a0e4d11",
 }
