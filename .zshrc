@@ -45,13 +45,8 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gitfast archlinux node docker npm nyan atom sudo vagrant)
+plugins=(git ubuntu node docker npm sudo vagrant)
 
-# User configuration
-
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
-export PATH=~/npm-global/bin:$PATH
-export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -73,9 +68,6 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-#eval $(ssh-agent)
-eval $(keychain --eval --quiet --noask)
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -94,18 +86,8 @@ alias reboot="systemctl reboot"
 alias halt="systemctl halt"
 alias cal="cal -m"
 
-alias sshme='~/dotfiles/scripts/sshme.sh'
-
 #GIT
 alias logo='git log --oneline --graph --all --decorate'
-
-#cd
-alias work_start="sudo truecrypt -t ~/TC/cd.ts ~/Work/CD"
-alias work_stop="sudo truecrypt -t -d ~/Work/CD"
-
-#node
-#alias npm="npm --no-bin-links"
-
 
 # TMUX
 #if which tmux >/dev/null 2>&1; then
@@ -113,5 +95,6 @@ alias work_stop="sudo truecrypt -t -d ~/Work/CD"
 #    test -z "$TMUX" && (tmux attach || tmux new-session)
 #fi
 
-export NVM_DIR="/home/ainv/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
