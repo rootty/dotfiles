@@ -1,5 +1,4 @@
 syntax on
-color dracula
 set number
 set relativenumber
 set numberwidth=2 " Keep the line number gutter narrow so three digits is cozy.
@@ -40,12 +39,15 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'matze/vim-move'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'lifepillar/vim-solarized8'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 " Initialize plugin system
 call plug#end()
+
+colorscheme dracula
 
 " toggle between number and relativenumber. :call ToggleNumber
 function! ToggleNumber()

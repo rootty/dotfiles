@@ -17,7 +17,7 @@
     "editor.copyWithSyntaxHighlighting": true,
     "breadcrumbs.enabled": true,
     // WORKBENCH
-    "workbench.colorTheme": "Tomorrow Night Blue",
+    "workbench.colorTheme": "Bluloco Light",
     "workbench.statusBar.feedback.visible": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.closeEmptyGroups": true,
