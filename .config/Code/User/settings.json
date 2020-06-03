@@ -13,12 +13,13 @@
     "editor.minimap.renderCharacters": false,
     "editor.minimap.maxColumn": 200,
     "editor.minimap.showSlider": "always",
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled": true,
     "editor.copyWithSyntaxHighlighting": true,
     "breadcrumbs.enabled": true,
     // WORKBENCH
-    "workbench.colorTheme": "Bluloco Light",
+    "workbench.colorTheme": "Dracula",
     "workbench.statusBar.feedback.visible": false,
+    "workbench.editor.scrollToSwitchTabs": true,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.closeEmptyGroups": true,
     "workbench.settings.editor": "json",
@@ -29,14 +30,13 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "files.autoSaveDelay": 1000,
-    "files.autoSave": "afterDelay",
     "files.associations": {
         "Dockerfile_*": "dockerfile",
         "Dockerfile.*": "dockerfile",
         "Dockerfile-*": "dockerfile"
     },
     // DEBUGGING
-    "debug.node.autoAttach": "on",
+    "debug.node.autoAttach": "off",
     "debug.toolBarLocation": "floating",
     "debug.openDebug": "openOnSessionStart",
     "debug.openExplorerOnEnd": true,
@@ -60,18 +60,41 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "python.jediEnabled": false,
     "sync.gist": "8bf2b8d37492647e8151c1549a0e4d11",
     "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "vsicons.dontShowNewVersionMessage": true,
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
+    "terminal.integrated.inheritEnv": false,
+    "rust.mode": "legacy",
+    "rust.rustup": {
+        "toolchain": "stable-x86_64-unknown-linux-gnu"
+    },
+    "sync.autoUpload": true,
+    "sync.autoDownload": true,
+    "git.confirmSync": false,
+    "terraform.indexing": {
+        "enabled": false,
+        "liveIndexing": false,
+        "delay": 500,
+        "exclude": [
+            ".terraform/**/*",
+            "**/.terraform/**/*"
+        ]
+    },
+    "terraform.languageServer": {
+        "enabled": true,
+        "args": []
+    },
+    "files.autoSave": "afterDelay",
+    "tabnine.experimentalAutoImports": 1,
 }
